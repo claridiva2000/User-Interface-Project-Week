@@ -1,1 +1,237 @@
-/* Should be empty until you compile your LESS */
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Your Code Goes Here */
+html {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+nav {
+  background: #99a5af;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 5px;
+  padding-bottom: 15px;
+  align-items: center;
+  text-shadow: -3px -3px 4px rgba(26, 26, 26, 0.2);
+  width: 96%;
+  max-width: 1047px;
+  margin: auto;
+  z-index: -1;
+}
+nav:hover {
+  text-shadow: -3px -3px 4px rgba(26, 26, 26, 0.5);
+}
+nav h1 {
+  color: #FFFFFF;
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+nav h1 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+nav img {
+  margin-right: 70px;
+}
+ul li {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 8rem;
+  margin-left: 25%;
+}
+ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+  opacity: 1;
+}
+ul a:hover {
+  color: #514537;
+  text-shadow: -3px -3px 4px rgba(26, 26, 26, 0.6);
+}
+.drop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #99a5af;
+  color: #FFFFFF;
+  opacity: 0.95;
+}
+.dropsj {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  opacity: 1;
+}
+.dropsj h6 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-left: 78px;
+  margin-top: 10px;
+  text-shadow: -3px -3px 4px rgba(26, 26, 26, 0.3);
+  opacity: 1;
+}
+.dropsj h6:hover {
+  text-shadow: -3px -3px 4px rgba(26, 26, 26, 0.6);
+}
+.dropsj img {
+  margin-right: 87px;
+  margin-top: 10px;
+}
+.dropnav {
+  text-align: left;
+  width: 60%;
+  margin: auto;
+  margin-top: 10%;
+  text-shadow: -3px -3px 4px rgba(26, 26, 26, 0.4);
+  opacity: 1;
+}
+.closed {
+  display: none;
+}
