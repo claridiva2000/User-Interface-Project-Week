@@ -19,3 +19,4 @@ expic.addEventListener('click', () =>{
  burger.style.opacity = "1";
  header.style.opacity = "1";
 });
+
