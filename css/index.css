@@ -274,30 +274,29 @@ footer p {
 }
 .billboard {
   background-image: url("../img/home/home-jumbotron.png");
-  height: 650px;
+  height: 580px;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-.billboard ul {
-  display: flex;
-  flex-direction: column;
-  font-size: 6.4rem;
-  font-weight: bold;
-  color: #FFFFFF;
-  margin-top: 30%;
+  background-size: 1040px;
+  margin-bottom: 0;
 }
 .big {
   margin: auto;
   position: relative;
-  height: 20px;
+  height: 0px;
+  margin-top: 20px;
   text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
 }
-.big ul {
+.big p {
   position: absolute;
-  bottom: 100px;
+  bottom: 200px;
   color: #FFFFFF;
+  bottom: 100px;
+  left: 30px;
+  line-height: 7.1rem;
+  font-size: 7.1rem;
+  font-weight: bold;
 }
 .fadein {
   animation: animationFrames ease 2s;
@@ -386,7 +385,7 @@ footer p {
   background: #D8D8D8;
   color: #222222;
   padding: 25px;
-  font-size: 2rem;
+  font-size: 2.3rem;
   letter-spacing: 0.8rem;
   text-align: center;
   position: relative;
@@ -420,9 +419,10 @@ footer p {
   width: 100%;
 }
 .box .button {
+  cursor: pointer;
   border: #222222 1px solid;
   padding: 8px;
-  width: 25%;
+  width: 40%;
   text-align: center;
   font-size: 0.9em;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.7);
@@ -443,12 +443,14 @@ footer p {
   width: 90%;
   z-index: -1;
 }
+.villas .small {
+  display: none;
+}
 .villas .villa {
   position: absolute;
   bottom: -30px;
   right: 47px;
-  width: 33%;
-  background: pink;
+  width: 39%;
 }
 .blurb {
   width: 50%;
@@ -472,6 +474,9 @@ footer p {
   width: 90%;
   z-index: -1;
 }
+.outskirts .small {
+  display: none;
+}
 .outskirts .outskirt {
   position: absolute;
   bottom: -30px;
@@ -488,15 +493,427 @@ footer p {
   width: 90%;
   z-index: -1;
 }
+.blocks .small {
+  display: none;
+}
 .blocks .block {
   position: absolute;
   bottom: -30px;
   right: 47px;
   width: 33%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .billboard {
     background-attachment: scroll;
+    height: 500px;
+    background-size: 100%;
+  }
+  .row1 {
+    margin-top: 10px;
+  }
+  .row2 {
+    margin-top: 10px;
+  }
+  footer {
+    margin: 0;
+    padding: 20px;
+  }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+  }
+  footer .container .form {
+    width: 100%;
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    line-height: 2.3rem;
+  }
+  footer .container .form h5 {
+    margin-bottom: 10px;
+  }
+  footer .container .form input {
+    font-size: 1.6rem;
+  }
+  footer .container .smallbox {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .billboard {
+    background-attachment: scroll;
+    height: 450px;
+    background-size: 100%;
+  }
+  .big {
+    margin: auto;
+    position: relative;
+    height: 0px;
+    margin-top: 0;
+    text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
+  }
+  .big p {
+    position: absolute;
+    bottom: 200px;
+    color: #FFFFFF;
+    bottom: 100px;
+    left: 30px;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    font-weight: bold;
+  }
+  .villas {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .villas img {
+    width: 90%;
+    z-index: -1;
+  }
+  .villas .small {
+    display: none;
+  }
+  .villas .villa {
+    position: absolute;
+    bottom: -30px;
+    right: 47px;
+    width: 39%;
+  }
+}
+@media (max-width: 700px) {
+  .billboard {
+    background-attachment: scroll;
+    height: 350px;
+    background-size: 100%;
+  }
+  .big {
+    margin: auto;
+    position: relative;
+    height: 0px;
+    margin-top: 0;
+    text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
+  }
+  .big p {
+    position: absolute;
+    bottom: 200px;
+    color: #FFFFFF;
+    bottom: 100px;
+    left: 30px;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-weight: bold;
+  }
+  .box {
+    width: 90%;
+    margin: auto;
+  }
+  .row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .row1 .button {
+    width: 95%;
+    margin: auto;
+    font-size: 1.2em;
+  }
+  .row2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .row2 .button {
+    width: 95%;
+    margin: auto;
+    font-size: 1.2em;
+  }
+  .villas {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .villas img {
+    width: 85%;
+    z-index: -1;
+  }
+  .villas .large {
+    display: none;
+  }
+  .villas .small {
+    display: block;
+    margin: auto;
+  }
+  .villas .villa {
+    position: absolute;
+    bottom: -55px;
+    right: 75px;
+    width: 75%;
+    font-size: 3rem;
+  }
+  .outskirts {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 85px;
+  }
+  .outskirts img {
+    width: 90%;
+    z-index: -1;
+  }
+  .outskirts .large {
+    display: none;
+  }
+  .outskirts .small {
+    display: block;
+    margin: auto;
+  }
+  .outskirts .outskirt {
+    position: absolute;
+    bottom: -30px;
+    left: 80px;
+    width: 75%;
+  }
+  .blocks {
+    position: relative;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 85px;
+  }
+  .blocks img {
+    width: 90%;
+    z-index: -1;
+  }
+  .blocks .large {
+    display: none;
+  }
+  .blocks .small {
+    display: block;
+    margin: auto;
+  }
+  .blocks .block {
+    position: absolute;
+    bottom: -30px;
+    right: 75px;
+    width: 75%;
+  }
+  .blurb {
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    margin-top: 50px;
+  }
+  .blurb p {
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 600px) {
+  .billboard {
+    background-attachment: scroll;
+    height: 340px;
+    background-size: 100%;
+  }
+  .big {
+    margin: auto;
+    position: relative;
+    height: 0px;
+    margin-top: 0;
+    text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
+  }
+  .big p {
+    position: absolute;
+    bottom: 200px;
+    color: #FFFFFF;
+    bottom: 100px;
+    left: 30px;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    font-weight: bold;
+  }
+}
+@media (max-width: 600px) {
+  .billboard {
+    background-attachment: scroll;
+    height: 320px;
+    background-size: 100%;
+  }
+  .big {
+    margin: auto;
+    position: relative;
+    height: 0px;
+    margin-top: 20px;
+    text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
+  }
+  .big p {
+    position: absolute;
+    bottom: 200px;
+    color: #FFFFFF;
+    font-size: 4rem;
+    line-height: 4rem;
+    bottom: 130px;
+    left: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .billboard {
+    height: 300px;
+    background-size: 100%;
+  }
+  .big {
+    margin: auto;
+    position: relative;
+    height: 0px;
+    margin-top: 20px;
+    text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
+  }
+  .big p {
+    position: absolute;
+    bottom: 200px;
+    color: #FFFFFF;
+    font-size: 4rem;
+    line-height: 4rem;
+    bottom: 130px;
+    left: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .billboard {
+    background-attachment: scroll;
+    height: 230px;
+    background-size: 100%;
+  }
+  .big {
+    margin: auto;
+    position: relative;
+    height: 0px;
+    margin-top: 20px;
+    text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
+  }
+  .big p {
+    position: absolute;
+    bottom: 200px;
+    color: #FFFFFF;
+    font-size: 4rem;
+    line-height: 4rem;
+    bottom: 80px;
+    left: 30px;
+  }
+  .box {
+    width: 90%;
+    margin: auto;
+  }
+  .row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .row1 .button {
+    width: 95%;
+    margin: auto;
+    font-size: 1.2em;
+  }
+  .row2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .row2 .button {
+    width: 95%;
+    margin: auto;
+    font-size: 1.2em;
+  }
+  .villas {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .villas img {
+    width: 85%;
+    z-index: -1;
+  }
+  .villas .large {
+    display: none;
+  }
+  .villas .small {
+    display: block;
+    margin: auto;
+  }
+  .villas .villa {
+    position: absolute;
+    bottom: -55px;
+    right: 45px;
+    width: 75%;
+    font-size: 3rem;
+  }
+  .outskirts {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 85px;
+  }
+  .outskirts img {
+    width: 90%;
+    z-index: -1;
+  }
+  .outskirts .large {
+    display: none;
+  }
+  .outskirts .small {
+    display: block;
+    margin: auto;
+  }
+  .outskirts .outskirt {
+    position: absolute;
+    bottom: -30px;
+    left: 45px;
+    width: 75%;
+  }
+  .blocks {
+    position: relative;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 85px;
+  }
+  .blocks img {
+    width: 90%;
+    z-index: -1;
+  }
+  .blocks .large {
+    display: none;
+  }
+  .blocks .small {
+    display: block;
+    margin: auto;
+  }
+  .blocks .block {
+    position: absolute;
+    bottom: -30px;
+    right: 45px;
+    width: 75%;
+  }
+  .blurb {
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    margin-top: 50px;
+  }
+  .blurb p {
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    font-weight: 500;
   }
 }
 .servboard {
@@ -511,7 +928,7 @@ footer p {
   font-weight: bold;
   color: #FFFFFF;
   position: absolute;
-  bottom: 25%;
+  bottom: 80px;
   left: 10%;
 }
 .servboard .big h4 {
@@ -543,6 +960,10 @@ footer p {
   padding: 15px;
   width: 150px;
   text-align: center;
+  cursor: pointer;
+}
+.services .service .tab:hover {
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.7);
 }
 .services .card {
   display: none;
@@ -563,4 +984,28 @@ footer p {
   background: #5E9FB9;
   color: #FFFFFF;
   text-shadow: -1px -2px 0px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 900px) {
+  .services .service {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .services .service .tab {
+    border: black 1px solid;
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .services .card {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .services .card img {
+    width: 100%;
+  }
 }
