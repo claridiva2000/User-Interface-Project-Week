@@ -1009,3 +1009,90 @@ footer p {
     width: 100%;
   }
 }
+.contactboard {
+  position: relative;
+}
+.contactboard img {
+  width: 100%;
+}
+.contactboard .big {
+  text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
+  font-size: 5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 60px;
+  left: 8%;
+}
+.contactboard .big h4 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.contact h3 {
+  color: #222222;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  margin-top: 50px;
+}
+.contact .locations {
+  display: flex;
+  margin-bottom: 20px;
+}
+.contact .spot {
+  width: 33%;
+  margin: auto;
+}
+.contact .spot img {
+  width: 100%;
+  height: 200px;
+}
+.contact .spot h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.contact .spot p {
+  font-size: 1.5rem;
+  color: #9BADB4;
+}
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  background: #9BADB4;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.contact .form h3 {
+  margin: auto;
+  margin-top: 15px;
+}
+.contact .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contact .form form textarea {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+.contact input {
+  margin: auto;
+  margin-top: 10px;
+  width: 95%;
+}
+.contact button {
+  margin: auto;
+  width: 30%;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  height: 30px;
+  border-radius: 3px;
+}
