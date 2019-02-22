@@ -7,8 +7,13 @@ nav{
   padding-bottom: 15px;
   align-items: center;
   text-shadow: -3px -3px 4px rgba(26, 26, 26, .2);   
- // max-width: 1440px;
+  // max-width: 1440px;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%;
   margin: auto;
+  z-index: 2;
 
   h1{
     color: @white;
@@ -51,7 +56,7 @@ ul{
 }
 
 .drop{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -62,7 +67,7 @@ ul{
   background: @navbargray;
   color: @white;
   opacity: .95;
-    z-index: 1;
+  z-index: 3;
 
 }
 

@@ -142,6 +142,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  margin-top: 10px;
 }
 nav {
   background: #9BADB4;
@@ -152,7 +153,12 @@ nav {
   padding-bottom: 15px;
   align-items: center;
   text-shadow: -3px -3px 4px rgba(26, 26, 26, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   margin: auto;
+  z-index: 2;
 }
 nav h1 {
   color: #FFFFFF;
@@ -185,7 +191,7 @@ ul a:hover {
   text-shadow: -3px -3px 4px rgba(26, 26, 26, 0.6);
 }
 .drop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -196,7 +202,7 @@ ul a:hover {
   background: #9BADB4;
   color: #FFFFFF;
   opacity: 0.95;
-  z-index: 1;
+  z-index: 3;
 }
 .dropsj {
   width: 100%;
@@ -1154,6 +1160,7 @@ footer p {
 }
 .contactboard img {
   width: 100%;
+  margin-top: 30px;
 }
 .contactboard .big {
   text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
@@ -1217,6 +1224,9 @@ footer p {
   font-size: 1.5rem;
   height: 30px;
   border-radius: 3px;
+}
+.contact .form form button:hover {
+  cursor: pointer;
 }
 .contact .locations {
   display: flex;
@@ -1291,7 +1301,133 @@ footer p {
     height: 230px;
     margin: auto;
   }
-  .contact .locations .spot .address {
-    padding-left: 5px;
+}
+.aboutboard img {
+  width: 100%;
+}
+.aboutboard .big {
+  text-shadow: -3px -3px 4px rgba(0, 0, 0, 0.9);
+  border: red 1px solid;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 60px;
+  left: 8%;
+}
+.aboutboard .big h4 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.about {
+  margin-top: 25px;
+}
+.about .company {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about .company .aboutcomp {
+  width: 500px;
+  margin: 10px;
+}
+.about .company .aboutcomp h2 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.about .company .aboutcomp p {
+  margin-top: 10px;
+  line-height: 1.8rem;
+}
+.about .company .picture {
+  width: 520px;
+  margin: 10px;
+}
+.about .company .picture img {
+  width: 100%;
+  height: 270px;
+}
+.about h3 {
+  margin-top: 50px;
+  font-size: 3rem;
+  margin-left: 25px;
+  font-weight: bold;
+}
+.about .team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+}
+.about .team .member {
+  padding: 15px;
+  border: #9BADB4 1px solid;
+  height: 200px;
+  width: 285px;
+  background: #9BADB4;
+  margin: 10px;
+}
+.about .team .member h5 {
+  font-weight: bold;
+}
+.about .team .member p {
+  margin-top: 5px;
+  color: #514537;
+}
+.about .team .member .links {
+  margin-top: 20px;
+}
+.about .team .member .links p {
+  margin-top: 8px;
+  color: #222222;
+  cursor: pointer;
+}
+.about .team .member .links p:hover {
+  text-decoration: underline;
+}
+.about .team .member .media {
+  margin-top: 55px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 3rem;
+  color: #222222;
+}
+.about .team .member .media i {
+  cursor: pointer;
+}
+.about .team .member .media i:hover {
+  text-shadow: -1px -2px 3px rgba(216, 216, 255, 0.9);
+}
+.about .team .member img {
+  position: relative;
+  bottom: 210px;
+  left: 155px;
+  width: 153px;
+  height: 170px;
+  opacity: 0.9;
+}
+@media (max-width: 800px) {
+  .about .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+  .about .company .aboutcomp {
+    width: 95%;
+    margin: auto;
+  }
+  .about .company .picture {
+    width: 95%;
+    margin: auto;
+  }
+  .about .company .picture img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
 }
